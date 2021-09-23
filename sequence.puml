@@ -31,6 +31,10 @@ sequenceDiagram {
 skinparam defaultFontName JetBrains Mono
 skinparam shadowing false
 skinparam roundCorner 10
+skinparam dpi 300
+
+scale 600 width
+scale 220 height
 
 participant Jessica
 participant Server
