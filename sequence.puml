@@ -1,0 +1,39 @@
+@startuml
+
+skinparam backgroundColor #f2f2f2
+skinparam defaultFontName JetBrains Mono
+skinparam defaultFontColor #696773
+skinparam shadowing false
+
+skinparam sequence {
+ArrowColor #696773
+ArrowFontSize 10
+
+LifeLineBorderColor #696773
+
+ParticipantBorderColor #f44d27
+ParticipantBackgroundColor #f44d27
+ParticipantFontSize 12
+ParticipantFontColor #eff1f3
+}
+
+participant Jessica
+participant Server
+participant John
+
+Server -> John: git clone
+John -> John: git commit
+Server -> Jessica: git clone
+Jessica -> Jessica: git commit
+Jessica -> Server: git push
+Server -> John: git fetch
+John -> John: git merge
+John -> Server: git push
+Server -> Jessica: git fetch
+Jessica -> Jessica: git merge
+Jessica -> Server: git push
+Server -> John: git fetch
+
+footer Figure 64. General sequence of events for\n a simple multiple-developer Git workflow
+
+@enduml
