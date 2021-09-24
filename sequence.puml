@@ -1,36 +1,6 @@
 @startuml
 
-<style>
-document {
-  FontSize 12
-  FontColor #696773
-  BackgroundColor #f2f2f2
-}
-
-sequenceDiagram {
-  FontColor #696773
-
-  arrow {
-    FontSize 12
-    LineColor #696773
-  }
-
-  participant {
-    FontSize 14
-    FontColor #eff1f3
-    LineColor #f44d27
-    BackgroundColor #f44d27
-  }
-
-  lifeLine {
-    LineColor #696773
-  }
-}
-</style>
-
-skinparam defaultFontName JetBrains Mono
-skinparam shadowing false
-skinparam roundCorner 10
+!include ./theme.puml
 
 participant Jessica
 participant Server

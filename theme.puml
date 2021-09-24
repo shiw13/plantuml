@@ -1,0 +1,40 @@
+@startuml
+
+!$c1="#f2f2f2"
+!$c2="#4e443c"
+!$c3="#f44d27"
+!$c4="#eff1f3"
+
+skinparam BackgroundColor $c1
+skinparam DefaultFontName JetBrains Mono
+skinparam DefaultFontSize 14
+skinparam DefaultFontColor $c2
+skinparam Shadowing false
+skinparam RoundCorner 10
+
+skinparam Sequence {
+MessageAlign center
+
+LifeLine {
+    BorderColor $c2
+}
+
+Arrow {
+    Color $c2
+    FontSize 14
+    FontColor $c2
+}
+
+Participant {
+    BorderColor $c3
+    BackgroundColor $c3
+    FontSize 16
+    FontColor $c4
+}
+}
+
+skinparam Activity {
+
+}
+
+@enduml
